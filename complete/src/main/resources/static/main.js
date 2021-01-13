@@ -5,7 +5,7 @@ function performGetRequest1() {
   var resultElement = document.getElementById('getResult1');
   resultElement.innerHTML = '';
   
-  axios.get('http://localhost:8080/demo/all')
+  axios.get('http://192.168.42.11:8080/demo/all')
     .then(function (response) {
       resultElement.innerHTML = generateSuccessHTMLOutput(response);
     })
